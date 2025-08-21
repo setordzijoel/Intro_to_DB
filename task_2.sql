@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS Order_Details(
     orderdetailid INTEGER PRIMARY KEY NOT NULL,
     order_id INTEGER,
     book_id INTEGER,
-    quantity FLOAT,
+    quantity DOUBLE,
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
