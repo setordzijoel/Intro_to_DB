@@ -13,7 +13,7 @@ try:
         cur = conn.cursor()
 
         # Create database if it does not exist
-        cur.execute("CREATE DATABASE IF NOT EXIST alx_book_store")
+        cur.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
         print("Database 'alx_book_store' created successfully!")
 except Error as e:
     print(f"Error while connecting: {e}")
